@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorAccentLight">#70d3ff</color>
+    <color name="pane">#333333</color>
+    <color name="dark_text_body_1">#aaaaaa</color>
+    <color name="dark_text_body_2">#eeeeee</color>
+
+    <color name="circle_off">#777777</color>
+    <color name="circle_on">#03A9F4</color>
+
+    <color name="opc">#ffffff</color>
+    <color name="opc_pressed">#cccccc</color>
+</resources>
+

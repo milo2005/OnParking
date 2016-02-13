@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/small"
+                    >
+
+                    <ImageView
+                        android:id="@+id/bar_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_local_parking"
+                        android:layout_marginRight="@dimen/small"
+                        />
+
+                    <TextView
+                        android:id="@+id/bar_title"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bar_label_parking"
+                        android:layout_toRightOf="@id/bar_icon"
+                        android:layout_marginBottom="@dimen/small"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/bar_city"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ciudad"
+                        android:layout_toRightOf="@id/bar_icon"
+                        android:layout_below="@id/bar_title"
+                        android:layout_marginRight="@dimen/small"
+                        />
+
+                    <TextView
+                        android:id="@+id/bar_city_value"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Popayan"
+                        android:layout_toRightOf="@id/bar_city"
+                        android:layout_below="@id/bar_title"
+                        android:textColor="@android:color/white"
+
+                        />
+
+                </RelativeLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shadow"
+                android:layout_gravity="bottom"
+                android:background="@drawable/shadow_top"
+                />
+        </FrameLayout>
+        <RelativeLayout
+            android:id="@+id/pane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/medium"
+            android:background="@color/pane"
+            >
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:id="@+id/txt_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_vehiculo"
+                android:textColor="@color/colorAccentLight"
+                android:layout_marginBottom="@dimen/xsmall"
+                />
+
+            <TextView
+                android:id="@+id/txt_placa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_placa"
+                android:layout_below="@id/txt_vehiculo"
+                android:layout_marginRight="@dimen/small"
+                android:textColor="@color/dark_text_body_1"
+                />
+
+            <TextView
+                android:id="@+id/txt_valor_placa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_placa_valor"
+                android:layout_below="@id/txt_vehiculo"
+                android:layout_toRightOf="@id/txt_placa"
+                android:textColor="@color/dark_text_body_2"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/pane"
+        app:layout_anchorGravity="right"
+        android:layout_margin="@dimen/small"
+        android:src="@drawable/ic_search"
+
+        />
+
+</android.support.design.widget.CoordinatorLayout>

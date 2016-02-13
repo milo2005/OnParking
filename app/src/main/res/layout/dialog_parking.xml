@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+
+    <TableRow
+        android:id="@+id/opc1"
+        android:padding="@dimen/small"
+        android:background="@drawable/dialog_opc_bg"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="@dimen/circle"
+            android:layout_height="@dimen/circle"
+            android:background="@drawable/circle_off"
+            android:textColor="@color/dark_text_body_2"
+            android:text="01"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/small"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Libre"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/opc2"
+        android:padding="@dimen/small"
+        android:background="@drawable/dialog_opc_bg"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="@dimen/circle"
+            android:layout_height="@dimen/circle"
+            android:background="@drawable/circle_off"
+            android:textColor="@color/dark_text_body_2"
+            android:text="02"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/small"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Libre"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/opc3"
+        android:padding="@dimen/small"
+        android:background="@drawable/dialog_opc_bg"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="@dimen/circle"
+            android:layout_height="@dimen/circle"
+            android:background="@drawable/circle_off"
+            android:textColor="@color/dark_text_body_2"
+            android:text="03"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/small"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Libre"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/opc4"
+        android:padding="@dimen/small"
+        android:background="@drawable/dialog_opc_bg"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="@dimen/circle"
+            android:layout_height="@dimen/circle"
+            android:background="@drawable/circle_off"
+            android:textColor="@color/dark_text_body_2"
+            android:text="04"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/small"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Libre"
+            />
+    </TableRow>
+
+</TableLayout>
