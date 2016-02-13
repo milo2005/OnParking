@@ -127,7 +127,7 @@
                 android:id="@+id/txt_valor_placa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/label_placa_valor"
+                android:text="@string/label_placa_grua_valor"
                 android:layout_below="@id/txt_vehiculo"
                 android:layout_toRightOf="@id/txt_placa"
                 android:textColor="@color/dark_text_body_2"
