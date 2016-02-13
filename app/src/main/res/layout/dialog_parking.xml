@@ -2,7 +2,7 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:stretchColumns="1"
 
     >
 
@@ -12,24 +12,60 @@
         android:padding="@dimen/small"
         android:background="@drawable/dialog_opc_bg"
         android:clickable="true"
+        android:gravity="center_vertical"
         >
         <TextView
             android:layout_width="@dimen/circle"
             android:layout_height="@dimen/circle"
-            android:background="@drawable/circle_off"
+            android:background="@drawable/circle_on"
             android:textColor="@color/dark_text_body_2"
             android:text="01"
             android:gravity="center"
             android:layout_marginRight="@dimen/small"
             />
 
-        <TextView
+            <RelativeLayout
+                android:layout_height="wrap_content"
 
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:text="Libre"
-            />
+                >
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Ocupado"
+                    />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:id="@+id/placa"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_below="@id/state"
+                    android:layout_marginRight="@dimen/xsmall"
+                    android:text="placa"
+                    android:textColor="@color/colorAccent"
+                    />
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:id="@+id/placa_valor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_below="@id/state"
+                    android:layout_toRightOf="@id/placa"
+                    android:text="@string/label_placa_valor"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
     </TableRow>
 
     <TableRow
